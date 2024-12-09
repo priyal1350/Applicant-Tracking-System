@@ -8,9 +8,6 @@ import io
 from PIL import Image 
 import pdf2image
 
-
-# pdf_content = pdf2image.convert_from_bytes(uploaded_file.read(), poppler_path=r'C:\Program Files\poppler\Library\bin')
-
 import google.generativeai as genai
 
 genai.configure(api_key=os.getenv("GOOGLE_API_KEY"))

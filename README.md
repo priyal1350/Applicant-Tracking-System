@@ -9,7 +9,7 @@ Streamlit, Python, pdf2image, Google Gemini AI, dotenv.
 
 __Setup__
 
-Clone the repository: git clone cd ATS-Tracking-System
-Install dependencies: pip install -r requirements.txt
-Add your API key in .env: GOOGLE_API_KEY=your_api_key_here
-Run the app: streamlit run app.py 
+1.Clone the repository: git clone cd ATS-Tracking-System
+2.Install dependencies: pip install -r requirements.txt
+3.Add your API key in .env: GOOGLE_API_KEY=your_api_key_here
+4.Run the app: streamlit run app.py 

@@ -21,12 +21,12 @@
    git clone https://github.com/your-username/Applicant-Tracking-System.git
    cd Applicant-Tracking-System
 
-###2. **Set Up Environment**
+### 2. __Set Up Environment__
 Create a .env file in the root directory and add your Google API key:
 GOOGLE_API_KEY=your_api_key_here
 
-###3. **Install Dependencies**
+### 3. **Install Dependencies**
 Install the required Python packages: pip install -r requirements.txt
 
-###4. **Run the Application**
+### 4. **Run the Application**
 streamlit run app.py

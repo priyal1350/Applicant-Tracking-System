@@ -16,7 +16,6 @@
 
 ## How to Use
 
-```plaintext
 ### 1. **Clone the Repository**
    git clone https://github.com/your-username/Applicant-Tracking-System.git
    cd Applicant-Tracking-System

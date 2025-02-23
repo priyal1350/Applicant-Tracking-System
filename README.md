@@ -16,17 +16,22 @@
 
 ## How to Use
 
+```plaintext
 ### 1. **Clone the Repository**
-   ```bash
    git clone https://github.com/your-username/Applicant-Tracking-System.git
    cd Applicant-Tracking-System
 
-### 2. __Set Up Environment__
-Create a .env file in the root directory and add your Google API key:
-GOOGLE_API_KEY=your_api_key_here
+### 2. **Set Up Environment**
+   - Create a .env file in the root directory and add your Google API key:
+     GOOGLE_API_KEY=your_api_key_here
 
 ### 3. **Install Dependencies**
-Install the required Python packages: pip install -r requirements.txt
+   Install the required Python packages:
+   pip install -r requirements.txt
 
 ### 4. **Run the Application**
-streamlit run app.py
+   streamlit run app.py
+
+### 5. **Open the App**
+   - The app will open in your browser at http://localhost:8501.
+

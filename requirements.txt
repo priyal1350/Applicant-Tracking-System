@@ -1,7 +1,0 @@
-Python 3.8+
-Streamlit
-Google Generative AI API
-Selenium
-BeautifulSoup
-PyPDF2
-python-docx

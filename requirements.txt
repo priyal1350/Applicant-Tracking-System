@@ -1,0 +1,10 @@
+streamlit
+selenium
+python-dotenv
+google-generativeai
+beautifulsoup4
+lxml
+PyPDF2
+python-docx
+requests
+webdriver-manager

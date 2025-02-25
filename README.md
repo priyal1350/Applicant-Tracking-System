@@ -36,14 +36,11 @@ cd Applicant-Tracking-System
 ### 4️⃣  **Run the Application**
    streamlit run app.py
 
-### 5. **Open the App**
-   The app will open in your browser at:
-http://localhost:8501
+### 5️⃣ Open the App  
+The app will open in your browser at: `http://localhost:8501`  
 
----
-🌍 Live Demo
-🎯 Try the live app here:
-🔗 ATS Resume Expert (Live)
-
+## 🌍 Live Demo  
+🎯 **Try the live app here:**  
+🔗 [ATS Resume Expert (Live)](https://applicant-tracking-system-production.up.railway.app/)  
 
 

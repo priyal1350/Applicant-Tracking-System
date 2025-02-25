@@ -35,5 +35,5 @@
    - The app will open in your browser at http://localhost:8501.
 ---
 ### LIVE DEMO:
-You can try the live app here: https://applicant-tracking-system-y0ga.onrender.com/
+You can try the live app here: https://applicant-tracking-system-production.up.railway.app/
 

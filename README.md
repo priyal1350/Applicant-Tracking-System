@@ -38,7 +38,7 @@ cd Applicant-Tracking-System
 
 ### 5. **Open the App**
    The app will open in your browser at:
- http://localhost:8501
+http://localhost:8501
 
 ---
 🌍 Live Demo

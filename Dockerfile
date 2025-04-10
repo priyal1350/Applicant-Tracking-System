@@ -4,16 +4,18 @@ FROM python:3.9-slim
 # Set the working directory in the container
 WORKDIR /app
 
-# Install system dependencies (fixes Chrome errors)
+# Install system dependencies (fixes broken packages)
 RUN apt-get update && apt-get install -y \
     wget curl unzip xdg-utils libnss3 libgconf-2-4 fonts-liberation \
     && rm -rf /var/lib/apt/lists/*
 
-# Install Google Chrome and ChromeDriver (fixed with proper dependencies)
+# Install Chrome (fixed: use --fix-missing and force dependencies)
 RUN wget -q https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb \
-    && apt-get install -y ./google-chrome-stable_current_amd64.deb \
+    && apt-get install -y --fix-broken ./google-chrome-stable_current_amd64.deb \
+    || (apt-get update && apt-get install -fy && apt-get install -y ./google-chrome-stable_current_amd64.deb) \
     && rm google-chrome-stable_current_amd64.deb
 
+# Install ChromeDriver
 RUN CHROMEDRIVER_VERSION=$(curl -sS https://chromedriver.storage.googleapis.com/LATEST_RELEASE) \
     && wget -q https://chromedriver.storage.googleapis.com/${CHROMEDRIVER_VERSION}/chromedriver_linux64.zip \
     && unzip chromedriver_linux64.zip -d /usr/local/bin/ \
@@ -30,5 +32,5 @@ COPY . .
 # Expose the port for Streamlit
 EXPOSE $PORT
 
-# Run the application (fixed for Render)
+# Run the application
 CMD streamlit run app.py --server.port=$PORT --server.address=0.0.0.0
